@@ -166,7 +166,11 @@ def tarel_test(filepath_GT,filepath_hazy,file_result):
 
     
 if __name__ == '__main__':
-    filepath_GT="SOTS/gt"
-    filepath_hazy="SOTS/hazy"
-    file_result="SOTS/clahe"
+    filepath_GT="O-HAZE/GT"
+    filepath_hazy="O-HAZE/hazy"
+    file_result="O-HAZE/darkchannel_result"
+    dark_channel_test(filepath_GT,filepath_hazy,file_result)
+    file_result="O-HAZE/tarel_result"
+    tarel_test(filepath_GT,filepath_hazy,file_result)
+    file_result="O-HAZE/clahe_result"
     clahe_test(filepath_GT,filepath_hazy,file_result)
